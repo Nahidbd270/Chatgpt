@@ -45,12 +45,12 @@ async def broadcasting_func(client : Client, message: Message):
         if not user_id:
             continue
         try:
-            await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/bisal_files_talk')]]))
+            await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/Movie_Request_Group_23')]]))
             completed += 1
         except FloodWait as e:
             if isinstance(e.value , int | float):
                 await asyncio.sleep(e.value)
-                await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/bisal_files_talk')]]))
+                await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/Movie_Request_Group_23')]]))
                 completed += 1
         except Exception as e:
             print("Error in broadcasting:", e) 
